@@ -1,6 +1,6 @@
 # Rodar o projeto
 
-```  npm installl'  para instalar as dependencias ```
+```  'npm installl'  para instalar as dependencias ```
 
 ``` 'npm run json' para rodar o json serve  ```
 
