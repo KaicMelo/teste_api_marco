@@ -1,0 +1,16 @@
+<form class="po-row" [formGroup]="checkoutForm">
+    <po-datepicker class="po-md-4" p-label="Data inicial" formControlName='dataInicial'>
+    </po-datepicker>
+    <po-datepicker class="po-md-4" p-label="Data final" formControlName='dataFinal'> </po-datepicker>
+    <po-select class="po-md-4" p-label="Estado" [p-options]="fields" formControlName='estado'>
+    </po-select>
+</form>
+
+<div class="po-row">
+    <po-button class="po-md-4" p-label="Salvar" (p-click)="salvar()"></po-button>
+</div>
+
+<div class="po-row">
+    <po-table [p-items]="listaDeItens" [p-columns]="colunas">
+    </po-table>
+</div>

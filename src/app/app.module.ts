@@ -1,3 +1,5 @@
+import { HomeModule } from './home/home.module';
+import { WidgetModule } from './widget/widget.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,7 +8,8 @@ import { PoButtonModule, PoDynamicModule, PoFieldModule, PoModule, PoTableModule
 import { RouterModule } from '@angular/router';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     PoModule,
     RouterModule.forRoot([]),
-    PoTemplatesModule,
-    PoDynamicModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    PoFieldModule,
-    PoButtonModule,
-    PoTableModule
+    AppRoutingModule,
+    WidgetModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

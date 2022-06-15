@@ -1,25 +1,9 @@
 <div class="po-wrapper">
-  <po-toolbar p-title="AppName"></po-toolbar>
+  <po-toolbar p-title="App Marco"></po-toolbar>
 
   <po-menu [p-menus]="menus"></po-menu>
 
-  <po-page-default p-title="AppName">
-
-    <form class="po-row" [formGroup]="checkoutForm">
-      <po-datepicker class="po-md-4" p-label="Data inicial" formControlName='dataInicial'>
-      </po-datepicker>
-      <po-datepicker class="po-md-4" p-label="Data final" formControlName='dataFinal'> </po-datepicker>
-      <po-select class="po-md-4" p-label="Estado" [p-options]="fields" formControlName='estado'>
-      </po-select>
-    </form>
-
-    <div class="po-row">
-      <po-button class="po-md-4" p-label="Salvar" (p-click)="salvar()"></po-button>
-    </div>
-
-    <div class="po-row">
-      <po-table [p-items]="listaDeItens" [p-columns]="colunas">
-      </po-table>
-    </div>
+  <po-page-default>
+    <router-outlet></router-outlet>
   </po-page-default>
 </div>
