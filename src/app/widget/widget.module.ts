@@ -1,3 +1,4 @@
+import { CardViewModule } from './card-view/card-view.module';
 import { WidgetViewModule } from './widget-view/widget-view.module';
 import { WidgetRoutingModule } from './widget-routing.module';
 import { NgModule } from '@angular/core';
@@ -14,6 +15,7 @@ import { PoInfoModule, PoWidgetModule } from '@po-ui/ng-components';
     WidgetRoutingModule,
     PoWidgetModule,
     WidgetViewModule,
+    CardViewModule,
     PoInfoModule
   ]
 })
