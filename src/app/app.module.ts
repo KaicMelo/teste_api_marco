@@ -20,8 +20,6 @@ import { AppRoutingModule } from './app-routing.module';
     PoModule,
     RouterModule.forRoot([]),
     AppRoutingModule,
-    WidgetModule,
-    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

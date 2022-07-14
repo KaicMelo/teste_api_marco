@@ -1,0 +1,25 @@
+<po-tabs>
+  <po-tab
+    p-label="Todos os cliente"
+    (p-click)="changeTab('allClients')"
+    [p-active]="selectedTab === 'all'"
+  ></po-tab>
+  <po-tab
+    p-label="Atualização liberada"
+    (p-click)="changeTab('updateAvailable')"
+    [p-active]="selectedTab === 'all'"
+  ></po-tab>
+  <po-tab
+    p-label="Sem atualização"
+    (p-click)="changeTab('noUpdate')"
+    [p-active]="selectedTab === 'all'"
+  ></po-tab>
+</po-tabs>
+
+
+<div *ngIf="selectedTab === 'allClients'">
+  <po-table [p-items]="allClients">
+  </po-table>
+</div>
+<div *ngIf="selectedTab === 'updateAvailable'">updateAvailable </div>
+<div *ngIf="selectedTab === 'noUpdate'">noUpdate </div>

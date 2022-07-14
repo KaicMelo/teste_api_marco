@@ -12,6 +12,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./widget/widget.module').then((m) => m.WidgetModule),
   },
+  {
+    path: 'versions',
+    loadChildren: () =>
+      import('./versions/versions.module').then((m) => m.VersionsModule),
+  },
 ];
 
 @NgModule({

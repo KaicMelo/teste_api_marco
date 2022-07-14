@@ -15,5 +15,6 @@ export class AppComponent implements OnInit {
   readonly menus: Array<PoMenuItem> = [
     { label: 'Home', action: () => this.router.navigate(['/']) },
     { label: 'Widget', action: () => this.router.navigate(['/widget']) },
+    { label: 'Versions', action: () => this.router.navigate(['/versions']) },
   ];
 }
